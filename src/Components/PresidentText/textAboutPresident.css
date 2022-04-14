@@ -1,0 +1,20 @@
+.textAboutPresident{
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 36px;
+    padding: 50px 40px;
+    margin-top: 30px;
+}
+
+h2 { 
+    color: white; 
+    font-family:Georgia, serif ; 
+    font-size: 64px; 
+    font-weight: 100; 
+    line-height: 64px; 
+    text-align: center; 
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+ }
+
+ .link__president{
+     text-decoration:rgba(0, 0, 0, 0.4)
+ }
