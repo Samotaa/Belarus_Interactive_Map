@@ -1,2 +1,2 @@
-Belarus Interective Map 
+Belarus Interactive Map 
 Novikevich Artyom 
