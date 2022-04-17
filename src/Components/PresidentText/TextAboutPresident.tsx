@@ -7,7 +7,7 @@ export default function TextAbout(){
     return(
         <>
             <div className="container__president">
-                <Fade direction="up"cascade >
+                <Fade direction="up" >
                     <h1>
                         ПРЕЗИДЕНТ - ГЛАВА ГОСУДАРСТВА 
                     </h1>

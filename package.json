@@ -1,12 +1,11 @@
 {
   "scripts": {
-    "start":"webpack-dev-server --mode development --open --hot --history-api-fallback", 
+    "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
     "start-local": "webpack-dev-server --env local --progress --hot --open"
   },
-  
   "dependencies": {
     "@react-spring/web": "^9.4.4",
-    "framer-motion": "^6.2.9",
+    "framer-motion": "^6.3.0",
     "lodash.shuffle": "^4.2.0",
     "mapbox-gl": "^2.0.0",
     "react": "^17.0.0",
@@ -34,4 +33,3 @@
     "webpack-dev-server": "^4.7.0"
   }
 }
-

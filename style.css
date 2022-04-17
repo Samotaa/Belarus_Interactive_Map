@@ -1,7 +1,9 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Helvetica, Arial, sans-serif;
     background-color: rgb(231, 220, 213);
+    overflow-x: hidden;
 }
 
 /* rgb(221, 213, 199) */
@@ -84,6 +86,7 @@ body {
     height: 1000px;
     text-align: center;
     margin: 50px 20px;
+    flex-wrap: wrap;
 }
 
 

@@ -2,24 +2,27 @@ import * as React from 'react';
 import { render } from 'react-dom';
 
 
-import Info from '../textAboutBLR/SomeInfo'
 import Title from '../title/title';
 import Nav from '../navbar/NavBar';
 import Places from '../places/places';
-import Population from '../Population/Population';
+import PopulationRegion from '../PopulationRegion/PopulationRegion';
 import President from '../President/President'
 import TextAbout from '../PresidentText/TextAboutPresident'
-
+import Population from '../textAboutBLR/population/Population'
+import Square from '../textAboutBLR/square/Square'
 import styles from './styles.module.css'
-
 import { Parallax } from "react-parallax";
+
+import './someinfo.css'
 
 
 const style = {
   fontFamily: "sans-serif",
   textAlign: "center",
 };
-const image1 = '../../back.jpg'
+
+const image1 = '../../main.jpg'
+const image2 = '../../minks.jpg'
 
 export default function Main() {
 
@@ -27,29 +30,44 @@ export default function Main() {
   return (
     <>
       <div className={styles.container}>
-      <Nav />
-        <Info />
+      <Nav />    
         <div className="mainBlock">
           <Title />
-          <div style={style}>
-            <Parallax bgImage={image1} strength={300}>
-              <div style={{ height: 800 }}>
+        </div>
+        <div className="A" style={style}>
+            <Parallax bgImage={image1} strength={600}>
+              <div style={{ height: '100vh'}}>
+            
               </div>
             </Parallax>
           </div>
-        </div>
     
+       
+        <div className="infoAbotRepublic">
+        <div className="squareStage">
+            <Square />
+          </div>
+          <div className="populationStage">
+            <Population />
+          </div>
+
+        </div> 
         <div className="mainStage">
             <Places />
-            <Population />
+            <PopulationRegion />
         </div>
-
+        <Parallax bgImage={image2} strength={800}>
+              <div style={{ height: 400 }}>
+              </div>
+          </Parallax>
         <div className="PresidentStage">
           <TextAbout />
           <President />
         </div>
+       
      
       </div>
+  
     </>
 
   );

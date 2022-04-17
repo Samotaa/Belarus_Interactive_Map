@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+.image__square{
+    width: 500px;
+    height:500px;
+    grid-area: image__square;
+    justify-self: center;
+}
+
+.containerSquare{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "image__square square__text"
+;
+    margin: 70px 15%;
+}
+
+.square__text{
+    padding: 60px;
+    grid-area: square__text;
+    justify-self: center;
+}
+.square__text__paragraph{
+    color: white;
+    font-size: 34px;
+    font-family: 'Orelega One', cursive;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+
+

@@ -9,7 +9,7 @@ import data from './data'
 
 import styles from './styles.module.css'
 
-function Masonry() {
+export default function Places() {
   const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [5, 4, 3], 2)
 
   const [ref, { width }] = useMeasure()
@@ -61,6 +61,3 @@ function Masonry() {
   )
 }
 
-export default function App() {
-  return <Masonry />
-}

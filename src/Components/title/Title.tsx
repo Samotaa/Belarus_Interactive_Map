@@ -5,23 +5,24 @@ import styled from "styled-components";
 const MyTitleMessage = styled.h1`
     position: absolute;
     left: 30%;
-    top: 28rem;
+    top: 26rem;
     z-index: 1;
     text-align: center;
-
     strong {
       font-size: 1em;
     }
 
     div {
       color: ${props => props.theme.titleColor};
-      text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+      text-shadow: 3px 2px 5px rgba(0, 0, 0, 1);
       font-weight: 100;
       .main {
         font-size: 1em;
       }
       .sub {
-      f ont-size: 1em;
+      font-size: 1em;
+      
+
       }
     }
 `;
@@ -40,7 +41,7 @@ const TitleMessage = () => (
           <div className="sub">
             <Typewriter
               options={{
-                strings: ["Красивую", "Благополочную", "Дружественную", "Прекрасную", "Развитую", "мирн"],
+                strings: ["Красивую", "Благополочную", "Дружественную", "Прекрасную", "Развитую", "Мирную"],
                 autoStart: true,
                 loop: true,
                 delay: 100
