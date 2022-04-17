@@ -2,16 +2,46 @@
   text-decoration: none;
 }
 
-.navbar{
+.navbar{  
+  display: block;
   list-style: none;
-  text-align: center;
+
+
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 12px 24px;
+  font-size: 13px;
+  line-height: 2;
+  color: #6b6b76;
+  z-index: 5;
 }
 
 a{
   text-decoration: none;
+} 
+
+.link__button{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+  color: black;
+  font-family: Century Gothic;
+  font-weight: bold;
+
 }
 
-.btn{
+.link__button:hover{
+  color: grey;
+}
+
+/* .btn{
   position: relative;
   display: block;
   color: white;
@@ -43,11 +73,6 @@ a{
 }
 .btn3:hover::before{
   height: 380%;
-}
+} */
 
-.navbar{
-  position: relative;
-  bottom: 5%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+

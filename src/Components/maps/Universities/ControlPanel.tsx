@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import UNIVERSITIES from '../../../cities.json'
+import UNIVERSITIES from './cities.json'
 
 function ControlPanel(props) {
 
@@ -8,9 +8,12 @@ function ControlPanel(props) {
 
   const [value, setValue] = useState('')
 
+ 
+
   const filteredUniversities = activeUn.filter(university => {
     return university.name.toLowerCase().includes(value.toLowerCase())
   })
+
 
   return (
     <div className="control-panel">

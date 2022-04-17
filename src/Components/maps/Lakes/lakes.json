@@ -1,0 +1,16 @@
+[
+  {
+    "lake": "Долгое- ",
+    "type": "Lakes",
+    "latitude": 55.4610,
+    "longitude": 26.7780,
+    "description": " средняя глубина: 16,6 м "
+  },
+  {
+    "lake": "Нароч-",
+    "type": "Lakes",
+    "latitude": 54.8574,
+    "longitude": 26.7696,
+    "description": "площадь: 79,6 км² "
+  }
+]

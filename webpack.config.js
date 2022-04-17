@@ -15,7 +15,7 @@ const config = {
   },
 
   output: {
-    library: 'App'
+    library: 'App',
   },
 
   resolve: {
@@ -58,6 +58,8 @@ const config = {
     
     ]
   },
+
+
 
   plugins: [new webpack.EnvironmentPlugin({MapboxAccessToken: ''})]
 };

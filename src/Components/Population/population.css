@@ -58,13 +58,13 @@ p {
     margin-top: 40px;
 }
 
-a:visited{
+.population_link:visited{
     color:white;
 }
 
-a{
+.population_link{
     color: white;
 }
-a:hover{
+.population_link:hover{
     color: grey
 }

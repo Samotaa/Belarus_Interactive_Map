@@ -1,3 +1,7 @@
+.container__president{
+    max-width: 60%;
+}
+
 .textAboutPresident{
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-size: 36px;
@@ -16,5 +20,19 @@ h2 {
  }
 
  .link__president{
-     text-decoration:rgba(0, 0, 0, 0.4)
+     text-decoration:rgba(0, 0, 0, 0.4);
+     text-decoration: underline;
  }
+
+
+.link__president:visited{
+    color:white;
+
+}
+
+.link__president{
+    color: white;
+}
+.link__president:hover{
+    color: grey
+}

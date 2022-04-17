@@ -1,5 +1,63 @@
 [
   {
+    "city": "Барановичи",
+    "site": "Барановичский_государственный_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/%D0%91%D0%B0%D1%80%D0%93%D0%A3.jpg/1920px-%D0%91%D0%B0%D1%80%D0%93%D0%A3.jpg",
+    "name": "БарГУ",
+    "latitude": 53.1253,
+    "longitude": 26.0401
+  },
+  {
+    "city": "Минск",
+    "site": "Белорусский_государственный_аграрный_технический_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%91%D0%94%D0%90%D0%A2%D0%A3_%2802%29.jpg/274px-%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%91%D0%94%D0%90%D0%A2%D0%A3_%2802%29.jpg",
+    "name": "БГАТУ",
+    "latitude": 53.9278,
+    "longitude": 27.6228
+  },
+
+  {
+    "city": "Минск",
+    "site": "Белорусский_государственный_медицинский_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/%D0%91%D0%93%D0%9C%D0%A3.jpg/274px-%D0%91%D0%93%D0%9C%D0%A3.jpg",
+    "name": "БГМУ",
+    "latitude": 53.8618,
+    "longitude": 27.4852
+  },
+  {
+    "city": "Минск",
+    "site": "Белорусский_государственный_педагогический_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Uniwersytet_Pedagogiczny_-_panoramio.jpg",
+    "name": "БГПУ им. М. Танка",
+    "latitude": 53.8941,
+    "longitude": 27.5444
+  },
+  {
+    "city": "Брест",
+    "site": "Брестский_государственный_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Brest1.JPG/1920px-Brest1.JPG",
+    "name": "БрГУ им. А. С. Пушкина",
+    "latitude": 52.0984,
+    "longitude": 23.6940
+  },
+  {
+    "city": "Минск",
+    "site": "Белорусский_государственный_технологический_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Y%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg/274px-Y%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
+    "name": "БГТУ им. Михалевича",
+    "latitude": 53.8917,
+    "longitude": 27.5598
+  },
+
+  {
+    "city": "Минск",
+    "site": "Белгородский_государственный_национальный_исследовательский_университет",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Belgorod_State_University_in_september.jpg/274px-Belgorod_State_University_in_september.jpg",
+    "name": "БелГУ",
+    "latitude": 53.8871,
+    "longitude": 27.5418
+  },
+  {
     "city": "Витебск",
     "site": "Витебский_государственный_медицинский_университет",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/%D0%92%D0%93%D0%9C%D0%A3_%28%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%29_-_%D0%9B%D0%A2%D0%9A.jpg/274px-%D0%92%D0%93%D0%9C%D0%A3_%28%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%29_-_%D0%9B%D0%A2%D0%9A.jpg",
@@ -23,14 +81,7 @@
     "latitude": 55.4865,
     "longitude": 28.7634
   },
-  {
-    "city": "Минск",
-    "site": "Белгородский_государственный_национальный_исследовательский_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Belgorod_State_University_in_september.jpg/274px-Belgorod_State_University_in_september.jpg",
-    "name": "БелГУ",
-    "latitude": 53.8871,
-    "longitude": 27.5418
-  },
+ 
   {
     "city": "Минск",
     "site": "#",
@@ -55,14 +106,7 @@
     "latitude": 53.9362,
     "longitude": 27.4884
   },
-  {
-    "city": "Минск",
-    "site": "Белорусский_государственный_аграрный_технический_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%91%D0%94%D0%90%D0%A2%D0%A3_%2802%29.jpg/274px-%D0%9C%D1%96%D0%BD%D1%81%D0%BA._%D0%91%D0%94%D0%90%D0%A2%D0%A3_%2802%29.jpg",
-    "name": "БГАТУ",
-    "latitude": 53.9278,
-    "longitude": 27.6228
-  },
+  
   {
     "city": "Минск",
     "site": "Белорусский_государственный_университет_информатики_и_радиоэлектроники",
@@ -95,22 +139,8 @@
     "latitude": 53.8932,
     "longitude": 27.5457
   },
-  {
-    "city": "Минск",
-    "site": "Белорусский_государственный_педагогический_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Uniwersytet_Pedagogiczny_-_panoramio.jpg",
-    "name": "БГПУ им. М. Танка",
-    "latitude": 53.8941,
-    "longitude": 27.5444
-  },
-  {
-    "city": "Минск",
-    "site": "Белорусский_государственный_технологический_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Y%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg/274px-Y%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.jpg",
-    "name": "БГТУ им. Михалевича",
-    "latitude": 53.8917,
-    "longitude": 27.5598
-  },
+ 
+ 
   {
     "city": "Минск",
     "site": "Международный_университет_«МИТСО»",
@@ -119,14 +149,7 @@
     "latitude": 53.8612,
     "longitude": 27.5212
   },
-  {
-    "city": "Минск",
-    "site": "Белорусский_государственный_медицинский_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/%D0%91%D0%93%D0%9C%D0%A3.jpg/274px-%D0%91%D0%93%D0%9C%D0%A3.jpg",
-    "name": "БГМУ",
-    "latitude": 53.8618,
-    "longitude": 27.4852
-  },
+  
   {
     "city": "Пинск",
     "site": "Полесский_государственный_университет",
@@ -151,22 +174,8 @@
     "latitude": 52.4448,
     "longitude": 30.9996
   },
-  {
-    "city": "Барановичи",
-    "site": "Барановичский_государственный_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/%D0%91%D0%B0%D1%80%D0%93%D0%A3.jpg/1920px-%D0%91%D0%B0%D1%80%D0%93%D0%A3.jpg",
-    "name": "БарГУ",
-    "latitude": 53.1253,
-    "longitude": 26.0401
-  },
-  {
-    "city": "Брест",
-    "site": "Брестский_государственный_университет",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Brest1.JPG/1920px-Brest1.JPG",
-    "name": "БГТУ",
-    "latitude": 52.0984,
-    "longitude": 23.6940
-  },
+ 
+ 
   {
     "city": "Брест",
     "site": "Брестский_государственный_технический_университет",

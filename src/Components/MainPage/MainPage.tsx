@@ -27,6 +27,7 @@ export default function Main() {
   return (
     <>
       <div className={styles.container}>
+      <Nav />
         <Info />
         <div className="mainBlock">
           <Title />
@@ -47,10 +48,9 @@ export default function Main() {
           <TextAbout />
           <President />
         </div>
-        <Nav />
+     
       </div>
     </>
-
 
   );
 }
