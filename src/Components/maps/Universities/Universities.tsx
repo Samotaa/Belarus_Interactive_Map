@@ -16,7 +16,7 @@ export default function Universities() {
     const [popupInfo, setPopupInfo] = useState(null);
 
     const pins = useMemo(() => CITIES.map((city, index) => (
-      
+
         <Marker
             key={`marker-${index}`}
             longitude={city.longitude}
@@ -50,14 +50,12 @@ export default function Universities() {
                     </a>
                 </div>
                 <img width="100%" src={popupInfo.image} />
-               
             </Popup>)
           }
-
           {pins}
           <Pin />
 
-          
-
+        
         </div>);
+        
 }

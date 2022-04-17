@@ -40,7 +40,7 @@ export default function MainMap(){
             height: '100%',
           }}
         >
-             <Nav />
+            <Nav />
             <Map
             initialViewState={{
               latitude: 54,

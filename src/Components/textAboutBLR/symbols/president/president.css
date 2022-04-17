@@ -1,0 +1,63 @@
+.containerPresident{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "text__about__president image__president";
+      margin-top: 40px;
+      margin-left: 5%;
+      margin-right: 5%;
+}
+
+.text__about__president{
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 24px;
+    padding: 50px 40px;
+    margin-top: 30px;
+}
+
+.text__section{
+    grid-area: text__about__president;
+    padding: 20px;
+}
+
+.img__and__text__president{
+    grid-area: image__president;
+    width: 500px;
+    text-align: center; 
+}
+.img__president{
+    width: 300px;
+    height: 450px;
+    margin-top: 40px;
+}
+
+h2 { 
+    color: white; 
+    font-family:Georgia, serif ; 
+    font-weight: 100; 
+    line-height: 48px; 
+    text-align: center; 
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+ }
+
+ .link__president{
+     text-decoration:rgba(0, 0, 0, 0.4);
+     text-decoration: underline;
+ }
+
+
+.link__president:visited{
+    color:white;
+}
+
+.link__president{
+    color: white;
+}
+.link__president:hover{
+    color: grey
+}
+
+.ad{
+    font-size: 10px !important;
+}
