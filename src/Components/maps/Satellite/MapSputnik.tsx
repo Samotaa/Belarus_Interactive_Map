@@ -1,34 +1,15 @@
 import * as React from 'react';
 import { useState, useMemo, useCallback, useRef } from 'react';
 import  Map, { GeolocateControl, FullscreenControl, NavigationControl } from 'react-map-gl';
-import ControlPanel from './ControlPanel';
-
-import Universities from './Universities'
 import Nav from '../../navbar/NavBar';
+import { MapboxStyleDefinition, MapboxStyleSwitcherControl } from "mapbox-gl-style-switcher";
 
 
 const TOKEN = 'pk.eyJ1Ijoic2Ftb3RhIiwiYSI6ImNrdGo3dnlrZTBpYzMycnFycXNxbHk4cnIifQ.iPh1u1wmQJodbRkjJKgreQ';
 
 
-
 export default function MainMap(){
-
     const mapRef = React.useRef();
-
-    const onSelectUniversity = useCallback(({ longitude, latitude }) => {
-      mapRef.current?.flyTo({
-        center: [longitude, latitude],
-        zoom: 13,
-        duration: 2000
-      });
-  }, []);
-
-  function onSelectBack() {
-    mapRef.current?.flyTo({
-      zoom: 6.2,
-      duration: 2000
-    });
-  };
     return(
         <div 
           id="map"
@@ -48,20 +29,16 @@ export default function MainMap(){
               zoom: 6.2,
               minZoom: 6.2
             }}
-            mapStyle="mapbox://styles/samota/cl20jnxsx003l14rzzwtagyo6"
+            mapStyle="mapbox://styles/samota/cl2xb6yj200qy14ksluanjh96"
             mapboxAccessToken={TOKEN}
             ref={mapRef}
           >
 
-            <Universities />
+            <GeolocateControl position="bottom-left" />
             <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
-  
           
           </Map>
-
-          <ControlPanel onSelectUniversity={onSelectUniversity} onSelectBack={onSelectBack}  />
-
 
         </div>
     )

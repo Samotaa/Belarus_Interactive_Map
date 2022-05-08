@@ -2,6 +2,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 
 
+
 import Title from '../title/title';
 import Nav from '../navbar/NavBar';
 import Places from '../places/places';
@@ -30,7 +31,7 @@ export default function Main() {
 
 
   return (
-    <>
+    < >
       <div className={styles.container}>
         <Nav />    
 

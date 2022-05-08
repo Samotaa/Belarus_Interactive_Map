@@ -78,9 +78,16 @@ body {
     
 }
 
-
+.PresidentStage{
+  height: 700px;
+}
 
 
 .Wiki_link{
   color: black
+}
+
+.scroll{
+  height: 300px;
+  width: 250px;
 }

@@ -37,7 +37,7 @@ export default function Places() {
 
 
   const transitions = useTransition(gridItems, {
-    
+     
     key: (item: { css: string; height: number }) => item.css,
     from: ({ x, y, width, height }) => ({ x, y, width, height, opacity: 0 }),
     enter: ({ x, y, width, height }) => ({ x, y, width, height, opacity: 1 }),
@@ -51,9 +51,9 @@ export default function Places() {
     <>    
         <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
         {transitions((style, item) => (
-            <a.div style={style}>
-                <div style={{ backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)` }} />
-            </a.div>
+          <a.div style={style}>
+            <div style={{ backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)` }} />
+          </a.div>
         ))}
         </div>
     </>

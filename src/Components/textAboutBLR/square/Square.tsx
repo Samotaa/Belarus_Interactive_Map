@@ -9,8 +9,6 @@ import './square.css'
 export default function Square(){
     return(
         <div className="containerSquare">
-           
-                
                 <img 
                     className="image__square"
                     src={"../../../square.png"}

@@ -14,7 +14,15 @@ export default function Universities() {
 
     const mapRef = React.useRef();
     const [popupInfo, setPopupInfo] = useState(null);
+    const [onloadInfo, setOnloadInfo] = useState(popupInfo);
 
+  const fix = () => {
+    setOnloadInfo(popupInfo)
+    console.log(onloadInfo)
+  }
+
+   
+    
     const pins = useMemo(() => CITIES.map((city, index) => (
 
         <Marker
@@ -22,24 +30,33 @@ export default function Universities() {
             longitude={city.longitude}
             latitude={city.latitude}
             anchor="center">
-            <Pin onClick={() => setPopupInfo(city)} />
-        </Marker>)), []);
+            <Pin 
+            onClick={() => {
+              setPopupInfo(null) 
+              setTimeout(() =>{setPopupInfo(city)}, 200)
+            
+              }    
+            } 
+            
+            />
+        </Marker>)), 
+        []);
     
-  
+
     return (
         <div >
-        
+          
           {popupInfo && (
             <Popup
               anchor="bottom"
               longitude={popupInfo.longitude}
               latitude={popupInfo.latitude}
-              closeOnClick={false}
-              onClose={() => setPopupInfo(null)}
+              closeOnClick={false}              
+              onClose={() => {setPopupInfo(null)}}
               closeButton={true} 
               closeOnMove={true}
-              maxWidth="350px"
-              minWidth="350px">
+              maxWidth="200px"
+              minWidth="200px">
                 <div>
                     {popupInfo.city}, {popupInfo.name} | {' '}
                     <a 
