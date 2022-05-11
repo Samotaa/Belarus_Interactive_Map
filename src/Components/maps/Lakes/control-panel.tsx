@@ -1,6 +1,6 @@
 import * as React from 'react';
 import LAKES from './lakes.json';
-
+import './lakes.css'
 function ControlPanel(props) {
   return (
     <div className="control-panel">
@@ -10,18 +10,20 @@ function ControlPanel(props) {
         <div key={`btn-${index}`} className="input">
 
           <input
+           className="option-input radio" 
             type="radio"
             name="lake"
             id={`lake-${index}`}
             onClick={() => props.onSelectLake(lake)}
           />
 
-          <label htmlFor={`lake-${index}`}>{lake.lake} {lake.description}</label>
+          <label className="descLake" htmlFor={`lake-${index}`}>{lake.lake} {lake.description}</label>
         </div>
 
       ))}
-      <label>
+      <label className="descLake">
         <input
+         className="option-input radio" 
           type="radio"
           name="lake"
           id={'back'}

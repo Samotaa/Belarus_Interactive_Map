@@ -45,10 +45,10 @@ export default function MainMap(){
             initialViewState={{
               latitude: 54,
               longitude: 28,
-              zoom: 6.2,
-              minZoom: 6.2
+              zoom: 6.5,
+              minZoom: 6.5
             }}
-            mapStyle="mapbox://styles/samota/cl20jnxsx003l14rzzwtagyo6"
+            mapStyle="mapbox://styles/samota/cl320mp31001w14odwj52o62g"
             mapboxAccessToken={TOKEN}
             ref={mapRef}
           >

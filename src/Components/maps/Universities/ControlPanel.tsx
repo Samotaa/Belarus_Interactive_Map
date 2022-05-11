@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import UNIVERSITIES from './cities.json'
-
+import './university.css'
 function ControlPanel(props) {
 
 
@@ -21,6 +21,7 @@ function ControlPanel(props) {
 
       <div className="searchInput">
         <input
+          className="inputUn"
           type="text"
           placeholder="Введите университет"
           onChange={(event) => setValue(event.target.value)}
@@ -32,6 +33,8 @@ function ControlPanel(props) {
         <div key={`btn-${index}`} className="input">
 
           <input
+          className="option-input radio" 
+          
             type="radio"
             name="university"
             id={`university-${index}`}
@@ -44,6 +47,7 @@ function ControlPanel(props) {
       ))}
       <label>
         <input
+         className="option-input radio" 
           type="radio"
           name="university"
           id={'back'}

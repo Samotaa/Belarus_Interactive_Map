@@ -2,9 +2,9 @@ import  React, {useState, useEffect, useMemo, useCallback} from 'react';
 import {render} from 'react-dom';
 import ControlPanel from './control-panel';
 import  Map, { GeolocateControl, FullscreenControl, NavigationControl,Source, Layer } from 'react-map-gl';
-import {dataLayer} from './map-style';
+import {dataLayer} from './districts-style';
 import {updatePercentiles} from './utils';
-import './regions.css'
+import './districts.css'
 import Nav from '../../navbar/NavBar';
 import GeocoderControl from '../../Search/Geo';
 
@@ -18,7 +18,7 @@ export default function App() {
   useEffect(() => {
 
     fetch(
-      'https://raw.githubusercontent.com/Samotaa/geojson/master/regions'
+      'https://raw.githubusercontent.com/Samotaa/geojson/master/Belarus_district_population_geojson'
     )
       .then(resp => resp.json())      
       .then(json => setAllData(json))
@@ -62,7 +62,7 @@ export default function App() {
           zoom: 6.5,
           minZoom: 6.5
         }}
-        mapStyle="mapbox://styles/samota/cl2xf2cx5001w14qcmubdt3kw"
+        mapStyle="mapbox://styles/samota/cl320evq6004c15npeh92o8fz"
         mapboxAccessToken={MAPBOX_TOKEN}
         interactiveLayerIds={['data']}
         onMouseMove={onHover}
@@ -76,13 +76,12 @@ export default function App() {
         {hoverInfo && (
           <div className="tooltip" style={{left: hoverInfo.x, top: hoverInfo.y}}>
             <div>{hoverInfo.feature.properties.name}</div>
-            <div>Население: {hoverInfo.feature.properties.value}</div>
+            <div>Население: {hoverInfo.feature.properties.population}</div>
           </div>
        
         )}
          <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
-            <ControlPanel year={year} onChange={value => setYear(value)} />
             <GeocoderControl  mapboxAccessToken={MAPBOX_TOKEN} position="top-left"/>
       </Map>
       

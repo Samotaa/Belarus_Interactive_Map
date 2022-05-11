@@ -7,7 +7,9 @@ import MapUniversities from './Components/maps/Universities/MapUniversities'
 import MapLakes from './Components/maps/Lakes/Lakes'
 import MapRegionsPopulation from './Components/maps/Regions/Regions'
 import MapSputnik from './Components/maps/Satellite/MapSputnik'
-import {  } from "react-router-dom";
+import DistrictPopulation from './Components/maps/District/Districts'
+
+
   
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
             <Route path="universities" element={<MapUniversities />} />  
             <Route path="lakes" element={<MapLakes />} />  
             <Route path="regions" element={<MapRegionsPopulation />} />  
+            <Route path="districts" element={<DistrictPopulation />} />  
           </Routes>
         </div>
       </BrowserRouter>

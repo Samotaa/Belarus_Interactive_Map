@@ -19,7 +19,9 @@
     "react-router-dom": "^6.3.0",
     "react-use-measure": "^2.1.1",
     "styled-components": "^5.3.5",
-    "typewriter-effect": "^2.18.2"
+    "typewriter-effect": "^2.18.2",    
+    "@mapbox/mapbox-gl-geocoder": "^4.7.4",
+    "@types/mapbox__mapbox-gl-geocoder": "^4.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
