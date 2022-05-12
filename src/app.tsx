@@ -8,6 +8,7 @@ import MapLakes from './Components/maps/Lakes/Lakes'
 import MapRegionsPopulation from './Components/maps/Regions/Regions'
 import MapSputnik from './Components/maps/Satellite/MapSputnik'
 import DistrictPopulation from './Components/maps/District/Districts'
+import Dostoprimechatelnosti from './Components/maps/Dostoprimechatelnosti/MapDostoprimechatelnosti'
 
 
   
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="sputnik" element={<MapSputnik />} />
+            <Route path="dost" element={<Dostoprimechatelnosti />} /> 
             <Route path="universities" element={<MapUniversities />} />  
             <Route path="lakes" element={<MapLakes />} />  
             <Route path="regions" element={<MapRegionsPopulation />} />  

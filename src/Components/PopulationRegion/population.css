@@ -12,45 +12,45 @@
 }
 .wrapper__population {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border-bottom: 1px white solid;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 .wrapper__population_Brest {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border-bottom: 1px white solid;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 
   .wrapper__population_Vitebsk {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border-bottom: 1px white solid;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 .wrapper__population_Gomel {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border-bottom: 1px white solid;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .wrapper__population_Grodno {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border-bottom: 1px white solid;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 .wrapper__population_Minsk {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     border-bottom: 1px white solid;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 .wrapper__population_Mogilev {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 .PopulationGrid{

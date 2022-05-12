@@ -3,12 +3,11 @@ import { useState, useMemo, useCallback, useRef } from 'react';
 import  Map, { GeolocateControl, FullscreenControl, NavigationControl } from 'react-map-gl';
 import ControlPanel from './ControlPanel';
 
-import Universities from './Universities'
+import Dostoprim from './Dostoprimechatelnosti'
 import Nav from '../../navbar/NavBar';
 import GeocoderControl from '../../Search/Geo';
 
-
-const TOKEN = 'pk.eyJ1Ijoic2Ftb3RhIiwiYSI6ImNrdGo3dnlrZTBpYzMycnFycXNxbHk4cnIifQ.iPh1u1wmQJodbRkjJKgreQ';
+const MAPBOX_TOKEN = 'pk.eyJ1Ijoic2Ftb3RhIiwiYSI6ImNrdGo3dnlrZTBpYzMycnFycXNxbHk4cnIifQ.iPh1u1wmQJodbRkjJKgreQ';
 
 
 
@@ -49,20 +48,20 @@ export default function MainMap(){
               zoom: 6.5,
               minZoom: 6.5
             }}
-            mapStyle="mapbox://styles/samota/cl320mp31001w14odwj52o62g"
-            mapboxAccessToken={TOKEN}
+            mapStyle="mapbox://styles/samota/cl3300u14004015p2ghljzhu9"
+            mapboxAccessToken={MAPBOX_TOKEN}
             ref={mapRef}
           >
 
-            <Universities />
+            <Dostoprim />
             <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
-  
-            <GeocoderControl  mapboxAccessToken={TOKEN} position="top-left"/>
+            <GeocoderControl  mapboxAccessToken={MAPBOX_TOKEN} position="top-left"/>
+          
           </Map>
 
           <ControlPanel onSelectUniversity={onSelectUniversity} onSelectBack={onSelectBack}  />
-         
+
 
         </div>
     )

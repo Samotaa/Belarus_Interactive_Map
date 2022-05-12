@@ -5,7 +5,7 @@ import { Map, Source, Layer, Marker,FullscreenControl, NavigationControl } from 
 
 import ControlPanel from './control-panel';
 import { clusterLayer, clusterCountLayer, unclusteredPointLayer } from './layers';
-
+import GeocoderControl from '../../Search/Geo';
 import Nav from '../../navbar/NavBar'
 
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoic2Ftb3RhIiwiYSI6ImNrdGo3dnlrZTBpYzMycnFycXNxbHk4cnIifQ.iPh1u1wmQJodbRkjJKgreQ'; // Set your mapbox token here
@@ -71,6 +71,7 @@ export default function App() {
 
         <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
+            <GeocoderControl  mapboxAccessToken={MAPBOX_TOKEN} position="top-left"/>
       </Map>
       <ControlPanel onSelectLake={onSelectLake} onSelectBack={onSelectBack} />
     </div>
