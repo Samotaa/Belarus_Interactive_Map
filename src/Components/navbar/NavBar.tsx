@@ -12,8 +12,8 @@ export default function Nav(){
                 <div className="sticky">
                     <Link className="link__button"  data-back="Back" data-front="Front" to="/">На главную</Link> 
                     <Link className="link__button"  data-back="Back" data-front="Front" to="/sputnik">Спутник</Link> 
-                    <Link className="link__button"  data-back="Back" data-front="Front" to="/regions">Население областей</Link>              
-                    <Link className="link__button"  data-back="Back" data-front="Front" to="/districts">Население районов</Link>  
+                    <Link className="link__button"  data-back="Back" data-front="Front" to="/regions">Информация об областях</Link>              
+                    <Link className="link__button"  data-back="Back" data-front="Front" to="/districts">Инфорация о городах и районах</Link>  
                     <Link className="link__button"  data-back="Back" data-front="Front" to="/dost">Достопримечательности</Link>  
                     <Link className="link__button"  data-back="Back" data-front="Front" to="/universities">Университеты</Link>  
                     <Link className="link__button"  data-back="Back" data-front="Front" to="/lakes">Озёра</Link>  

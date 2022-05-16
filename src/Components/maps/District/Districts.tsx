@@ -18,7 +18,7 @@ export default function App() {
   useEffect(() => {
 
     fetch(
-      'https://raw.githubusercontent.com/Samotaa/geojson/master/Belarus_district_population_geojson'
+      'https://raw.githubusercontent.com/Samotaa/geojson/master/RegionsInfo'
     )
       .then(resp => resp.json())      
       .then(json => setAllData(json))
@@ -75,8 +75,9 @@ export default function App() {
 
         {hoverInfo && (
           <div className="tooltip" style={{left: hoverInfo.x, top: hoverInfo.y}}>
-            <div>{hoverInfo.feature.properties.name}</div>
+            <div>{hoverInfo.feature.properties.name_ru}</div>
             <div>Население: {hoverInfo.feature.properties.population}</div>
+            <div>Площадь: {hoverInfo.feature.properties.area} км<sup>2</sup></div>
           </div>
        
         )}

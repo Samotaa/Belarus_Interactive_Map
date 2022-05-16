@@ -1,13 +1,18 @@
 .tooltip {
    position: absolute;
+   top: 500px;
+   left: 10px;
    margin: 8px;
    padding: 4px;
    background: rgba(0, 0, 0, 0.8);
    color: #fff;
-   max-width: 300px;
+   max-width: 1000px;
    font-size: 24px;
    z-index: 9;
    pointer-events: none;
    line-height: 24px;
  }
 
+ .city{
+   font-size: 36px;
+ }

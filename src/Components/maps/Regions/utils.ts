@@ -16,6 +16,7 @@ export function updatePercentiles(
       const properties = {
         ...f.properties,
         value,
+
       };
       return {...f, properties};
     })

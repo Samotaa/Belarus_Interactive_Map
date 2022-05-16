@@ -24,7 +24,7 @@
     margin-right: 0.5rem;
     outline: none;
     position: relative;
-    z-index: 1000;
+    z-index: 3;
   }
   .option-input:hover {
     background: #9faab7;
@@ -51,7 +51,7 @@
     content: '';
     display: block;
     position: relative;
-    z-index: 100;
+    z-index: 3;
   }
   .option-input.radio {
     border-radius: 50%;
