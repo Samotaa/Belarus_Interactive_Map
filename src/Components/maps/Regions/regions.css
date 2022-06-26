@@ -1,7 +1,7 @@
 .tooltip {
    position: absolute;
-   top: 500px;
-   left: 10px;
+   top: 30%;
+   right: 10px;
    margin: 8px;
    padding: 4px;
    background: rgba(0, 0, 0, 0.8);
@@ -10,7 +10,7 @@
    font-size: 24px;
    z-index: 9;
    pointer-events: none;
-   line-height: 24px;
+   line-height: 48px;
  }
 
  .city{

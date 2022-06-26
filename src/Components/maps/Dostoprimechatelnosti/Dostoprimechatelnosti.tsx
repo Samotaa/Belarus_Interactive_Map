@@ -48,16 +48,18 @@ export default function Dostoprimechatelnosti() {
           
           {popupInfo && (
             <Popup
+            className="markerDost"
               anchor="bottom"
               longitude={popupInfo.longitude}
               latitude={popupInfo.latitude}
               closeOnClick={false}              
               onClose={() => {setPopupInfo(null)}}
               closeButton={true} 
-              closeOnMove={true}
+              closeOnMove={false}
               maxWidth="200px"
-              minWidth="200px">
-                <div>
+              minWidth="200px"
+              >
+                <div >
                     {popupInfo.city}, {popupInfo.name} | {' '}
 
                     <p>{popupInfo.opisanie}</p>

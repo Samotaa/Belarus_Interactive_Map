@@ -46,8 +46,8 @@ export default function App() {
         initialViewState={{
           latitude: 54,
           longitude: 28,
-          zoom: 6.5,
-          minZoom: 6.5
+          zoom: 6.1,
+          minZoom: 6.1
         }}
         mapStyle="mapbox://styles/samota/cl1duf7ak00j314qonxftcjh4"
         mapboxAccessToken={MAPBOX_TOKEN}

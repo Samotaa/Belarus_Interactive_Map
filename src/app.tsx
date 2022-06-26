@@ -31,6 +31,6 @@ export default function App() {
 }
 
 export function renderToDom(container) {
-  render(<App />, container);
+   render(<App />, container);
 }
 

@@ -15,7 +15,7 @@ type GeocoderControlProps = Omit<GeocoderOptions, 'accessToken' | 'mapboxgl' | '
   onError?: (e: object) => void;
 };
 
-/* eslint-disable complexity,max-statements */
+
 export default function GeocoderControl(props: GeocoderControlProps) {
   const [marker, setMarker] = useState(null);
 

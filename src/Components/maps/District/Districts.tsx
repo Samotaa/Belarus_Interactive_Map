@@ -59,8 +59,8 @@ export default function App() {
         initialViewState={{
           latitude: 54,
           longitude: 28,
-          zoom: 6.5,
-          minZoom: 6.5
+          zoom: 6.1,
+          minZoom: 6.1
         }}
         mapStyle="mapbox://styles/samota/cl320evq6004c15npeh92o8fz"
         mapboxAccessToken={MAPBOX_TOKEN}
@@ -74,14 +74,15 @@ export default function App() {
         </Source>
 
         {hoverInfo && (
-          <div className="tooltip" style={{left: hoverInfo.x, top: hoverInfo.y}}>
+          <div className="tooltip1" style={{left: hoverInfo.x, top: hoverInfo.y}}>
             <div>{hoverInfo.feature.properties.name_ru}</div>
             <div>Население: {hoverInfo.feature.properties.population}</div>
             <div>Площадь: {hoverInfo.feature.properties.area} км<sup>2</sup></div>
           </div>
        
         )}
-         <FullscreenControl position="bottom-left" />
+            <GeolocateControl position="bottom-left" />
+            <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
             <GeocoderControl  mapboxAccessToken={MAPBOX_TOKEN} position="top-left"/>
       </Map>

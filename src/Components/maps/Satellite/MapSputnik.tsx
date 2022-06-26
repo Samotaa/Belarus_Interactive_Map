@@ -26,8 +26,8 @@ export default function MainMap(){
             initialViewState={{
               latitude: 54,
               longitude: 28,
-              zoom: 6.5,
-              minZoom: 6.5
+              zoom: 6.1,
+              minZoom: 6.1
             }}
             mapStyle="mapbox://styles/samota/cl2xb6yj200qy14ksluanjh96"
             mapboxAccessToken={MAPBOX_TOKEN}

@@ -46,8 +46,8 @@ export default function MainMap(){
             initialViewState={{
               latitude: 54,
               longitude: 28,
-              zoom: 6.5,
-              minZoom: 6.5
+              zoom: 6.1,
+              minZoom: 6.1
             }}
             mapStyle="mapbox://styles/samota/cl320mp31001w14odwj52o62g"
             mapboxAccessToken={TOKEN}
@@ -55,9 +55,9 @@ export default function MainMap(){
           >
 
             <Universities />
+            <GeolocateControl position="bottom-left" />
             <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
-  
             <GeocoderControl  mapboxAccessToken={TOKEN} position="top-left"/>
           </Map>
 

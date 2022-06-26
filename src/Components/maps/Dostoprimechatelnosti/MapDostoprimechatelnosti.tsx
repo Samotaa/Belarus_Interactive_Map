@@ -45,8 +45,8 @@ export default function MainMap(){
             initialViewState={{
               latitude: 54,
               longitude: 28,
-              zoom: 6.5,
-              minZoom: 6.5
+              zoom: 6.1,
+          minZoom: 6.1
             }}
             mapStyle="mapbox://styles/samota/cl3300u14004015p2ghljzhu9"
             mapboxAccessToken={MAPBOX_TOKEN}
@@ -54,6 +54,7 @@ export default function MainMap(){
           >
 
             <Dostoprim />
+            <GeolocateControl position="bottom-left" />
             <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
             <GeocoderControl  mapboxAccessToken={MAPBOX_TOKEN} position="top-left"/>

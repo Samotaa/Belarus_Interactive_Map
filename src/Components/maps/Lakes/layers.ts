@@ -13,8 +13,6 @@ export const clusterLayer: LayerProps = {
 
   }
 };
-
-
 export const clusterCountLayer: LayerProps = {
   id: 'cluster-count',
   type: 'symbol',
@@ -29,7 +27,6 @@ export const clusterCountLayer: LayerProps = {
     'text-color': "#000000"
   }
 };
-
 export const unclusteredPointLayer: LayerProps = {
   id: 'unclustered-point',
   type: 'circle',

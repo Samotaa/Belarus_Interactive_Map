@@ -8,8 +8,6 @@ function ControlPanel(props) {
 
   const [value, setValue] = useState('')
 
- 
-
   const filteredUniversities = activeUn.filter(university => {
     return university.name.toLowerCase().includes(value.toLowerCase())
   })

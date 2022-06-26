@@ -28,13 +28,10 @@ const image1 = '../../main.jpg'
 const image2 = '../../minks.jpg'
 
 export default function Main() {
-
-
   return (
     < >
       <div className={styles.container}>
         <Nav />    
-
         <div className="mainBlock">
           <Title />
         </div>
@@ -45,23 +42,18 @@ export default function Main() {
             </div>
           </Parallax>
         </div>
-    
-       
         <div className="infoAbotRepublic">
           <div className="squareStage">
             <Square />
           </div>
-
           <div className="populationStage">
             <Population />
           </div>
         </div> 
-
         <div className="mainStage">
           <Places />
           <PopulationRegion />
         </div>
-
         <Parallax bgImage={image2} strength={800}>
           <div style={{ height: 400 }}>
           </div>
@@ -71,9 +63,6 @@ export default function Main() {
         <div className="PresidentStage">
           <President />
         </div>
-
-       
-       
       </div>
     </>
 

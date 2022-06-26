@@ -55,8 +55,8 @@ export default function Universities() {
               onClose={() => {setPopupInfo(null)}}
               closeButton={true} 
               closeOnMove={true}
-              maxWidth="200px"
-              minWidth="200px">
+              maxWidth="300px"
+              minWidth="300px">
                 <div>
                     {popupInfo.city}, {popupInfo.name} | {' '}
                     <a 

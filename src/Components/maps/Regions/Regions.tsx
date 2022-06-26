@@ -23,7 +23,6 @@ export default function App() {
       .then(json => setAllData(json))
       .catch(err => console.error('Could not load data', err)); 
   }, []);
-
   const onHover = useCallback(event => {
     const {
       features,
@@ -34,14 +33,11 @@ export default function App() {
     setHoverInfo(hoveredFeature && {feature: hoveredFeature, x, y});
   }, []);
   
-
-
   const onLeave = useCallback(event => {
     setHoverInfo(null);
   }, [])
 
   const data = useMemo(() => {
-
     return allData && updatePercentiles(allData, f => f.properties.population[year] );
   });
 
@@ -60,14 +56,14 @@ export default function App() {
         initialViewState={{
           latitude: 54,
           longitude: 28,
-          zoom: 6.5,
-          minZoom: 6.5
+          zoom: 6.1,
+          minZoom: 6.1
         }}
         mapStyle="mapbox://styles/samota/cl2xf2cx5001w14qcmubdt3kw"
         mapboxAccessToken={MAPBOX_TOKEN}
         interactiveLayerIds={['data']}
         onClick={onHover}
-        // onMouseLeave={onLeave}
+
       >
 
         <Source  type="geojson" data={data}>
@@ -91,9 +87,11 @@ export default function App() {
           </div>
        
         )}
-         <FullscreenControl position="bottom-left" />
+            <GeolocateControl position="bottom-left" />
+            <FullscreenControl position="bottom-left" />
             <NavigationControl position="bottom-left" />
             <GeocoderControl  mapboxAccessToken={MAPBOX_TOKEN} position="top-left"/>
+            
       </Map>
       
     </div>
